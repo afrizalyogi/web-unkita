@@ -1,0 +1,42 @@
+[
+	{
+		"faculty": "Teknik",
+		"study": [
+			"Teknik Informatika",
+			"Teknik Elektro",
+			"Teknik Mesin",
+			"Teknik Arsitektur",
+			"Teknik Sipil"
+		]
+	},
+	{
+		"faculty": "Ekonomi dan Bisnis",
+		"study": ["Ekonomi", "Manajemen", "Akuntansi"]
+	},
+	{
+		"faculty": "Keguruan dan Ilmu Pendidikan",
+		"study": [
+			"Pendidikan Ekonomi",
+			"Pendidikan Guru Sekolah Dasar",
+			"Pendidikan Matematika",
+			"Pendidikan Bahasa Inggris"
+		]
+	},
+	{
+		"faculty": "Ilmu Sosial dan Ilmu Politik",
+		"study": [
+			"Sosiologi",
+			"Ilmu Pemerintahan",
+			"Ilmu Administrasi Bisnis",
+			"Hubungan Internasional"
+		]
+	},
+	{
+		"faculty": "Matematika dan Ilmu Pengetahuan Alam",
+		"study": ["Kimia", "Biologi", "Matematika", "Ilmu Komputer"]
+	},
+	{
+		"faculty": "Kedokteran",
+		"study": ["Pendidikan Dokter", "Farmasi"]
+	}
+]
