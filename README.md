@@ -18,6 +18,18 @@ Berikut struktur folder dalam aplikasi ini:
 
 ```
 web-unkita
+ ┣ 📂img
+ ┃ ┗ (image assets)
+ ┣ 📂includes
+ ┃ ┣ 📜footer.php
+ ┃ ┣ 📜meta.php
+ ┃ ┣ 📜nav.php
+ ┃ ┗ 📜style.php
+ ┣ 📂pages
+ ┃ ┣ 📜home.php
+ ┃ ┣ 📜login.php
+ ┃ ┗ 📜register.php
+ ┣ 📜db_connect.php
  ┣ 📜index.php
  ┣ 📜main.css
  ┣ 📜README.md
