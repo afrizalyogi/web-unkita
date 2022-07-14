@@ -1,3 +1,43 @@
+@media only screen and (max-width: 460px) {
+}
+@media only screen and (max-width: 996px) {
+	body section div h1 {
+		margin-bottom: -4px;
+		text-align: center;
+		font-size: 42px;
+	}
+	body section div h2 {
+		text-align: center;
+	}
+	body section .row {
+		display: block;
+		margin-bottom: 24px;
+	}
+	body section .col {
+		display: block;
+	}
+	body section .card-dark {
+		padding: 0;
+		background: unset;
+		color: #000;
+		border-radius: 0;
+	}
+	body section .card-dark h2 {
+		text-align: left;
+	}
+	body p,
+	body li {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	body section {
+		padding: 2% 8%;
+	}
+	body section div h1 {
+		font-size: 48px;
+	}
+}
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -14,6 +54,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
+	min-width: 440px;
 	margin: 0;
 	font-family: "Poppins", sans-serif;
 }
@@ -60,6 +101,26 @@ section div h2 {
 section div p {
 	text-align: justify;
 }
+/* ID (A-Z) */
+#about {
+	background: #004288;
+	color: #fff;
+}
+#slider {
+	overflow: hidden;
+}
+#slider div {
+	margin: 16px 0;
+	width: 300%;
+	position: relative;
+	animation: 10s slider infinite;
+}
+#slider div img {
+	width: 33.3333333333%;
+	height: 380px;
+	float: left;
+	object-fit: cover;
+}
 /* Class (A-Z) */
 .btn-inline {
 	margin: 4% 0;
@@ -82,7 +143,8 @@ section div p {
 	text-align: center;
 }
 .card-dark {
-	margin: 4% 0;
+	width: 88%;
+	margin: 8% 0;
 	padding: 24px;
 	background: #004288;
 	color: #fff;
@@ -102,9 +164,6 @@ section div p {
 }
 .float-right {
 	float: right;
-}
-.hide {
-	display: none;
 }
 .list-none {
 	list-style: none;
@@ -146,26 +205,6 @@ section div p {
 	color: #fff;
 	border: none;
 	width: 45%;
-}
-/* ID (A-Z) */
-#about {
-	background: #004288;
-	color: #fff;
-}
-#slider {
-	overflow: hidden;
-}
-#slider div {
-	margin: 16px 0;
-	width: 300%;
-	position: relative;
-	animation: 9s slider infinite;
-}
-#slider div img {
-	width: 33.3333333333%;
-	height: 380px;
-	float: left;
-	object-fit: cover;
 }
 /* Keyframe (A-Z) */
 @keyframes slider {

@@ -1,6 +1,6 @@
 <section>
   <div class="card">
-    <form method="post">
+    <form action="?profile" method="post">
       <h2>Registrasi Mahasiswa</h2>
       <hr />
       <br />
@@ -27,6 +27,10 @@
       <label for="form-email">Email: </label>
       <br />
       <input id="form-email" type="email" name="email" required />
+      <br />
+      <label for="form-pass">Password: </label>
+      <br />
+      <input id="form-pass" type="password" name="pass" required />
       <br />
       <div class="btn-inline">
         <input class="reset" type="reset" name="reset" />

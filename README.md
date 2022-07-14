@@ -18,9 +18,12 @@ Berikut struktur folder dalam aplikasi ini:
 
 ```
 web-unkita
+ ┣ 📂data
+ ┃ ┗ 📜study_program.json
  ┣ 📂img
  ┃ ┗ (image assets)
  ┣ 📂includes
+ ┃ ┣ 📜db_connect.php
  ┃ ┣ 📜footer.php
  ┃ ┣ 📜meta.php
  ┃ ┣ 📜nav.php
@@ -29,11 +32,9 @@ web-unkita
  ┃ ┣ 📜home.php
  ┃ ┣ 📜login.php
  ┃ ┗ 📜register.php
- ┣ 📜db_connect.php
  ┣ 📜index.php
  ┣ 📜main.css
- ┣ 📜README.md
- ┗ 📜study_program.json
+ ┗ 📜README.md
 ```
 
 ## Requirements

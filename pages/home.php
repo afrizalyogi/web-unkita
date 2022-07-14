@@ -1,6 +1,6 @@
 <?php
-	$json1 = file_get_contents('study_program.json');
-	$studyProgram = json_decode($json1);
+	$buffer = file_get_contents("./data/study_program.json");
+	$studyProgram = json_decode($buffer);
 	$studyProgramRange = count($studyProgram);
 ?>
 
@@ -36,38 +36,38 @@
     <div class="col">
       <ul>
         <?php for($i = 0; $i < $studyProgramRange/2; $i++): ?>
-        <div class="card-dark">
-          <li class="list-none">
-            <h2>
-              Fakultas
-              <?=$studyProgram[$i]->faculty?>
-            </h2>
-            <ul>
-              <?php foreach($studyProgram[$i]->study as $j): ?>
-              <li><?=$j?></li>
-              <?php endforeach ?>
-            </ul>
-          </li>
-        </div>
+          <div class="card-dark">
+            <li class="list-none">
+              <h2>
+                Fakultas
+                <?=$studyProgram[$i]->faculty?>
+              </h2>
+              <ul>
+                <?php foreach($studyProgram[$i]->study as $j): ?>
+                  <li><?=$j?></li>
+                <?php endforeach ?>
+              </ul>
+            </li>
+          </div>
         <?php endfor ?>
       </ul>
     </div>
     <div class="col">
       <ul>
         <?php for($i = $studyProgramRange/2; $i < $studyProgramRange; $i++): ?>
-        <div class="card-dark">
-          <li class="list-none">
-            <h2>
-              Fakultas
-              <?=$studyProgram[$i]->faculty?>
-            </h2>
-            <ul>
-              <?php foreach($studyProgram[$i]->study as $j): ?>
-              <li><?=$j?></li>
-              <?php endforeach ?>
-            </ul>
-          </li>
-        </div>
+          <div class="card-dark">
+            <li class="list-none">
+              <h2>
+                Fakultas
+                <?=$studyProgram[$i]->faculty?>
+              </h2>
+              <ul>
+                <?php foreach($studyProgram[$i]->study as $j): ?>
+                  <li><?=$j?></li>
+                <?php endforeach ?>
+              </ul>
+            </li>
+          </div>
         <?php endfor ?>
       </ul>
     </div>

@@ -4,13 +4,13 @@
       <h2>Login Mahasiswa</h2>
       <hr />
       <br />
-      <label for="form-npm">NPM: </label>
+      <label for="form-login-email">Email: </label>
       <br />
-      <input id="form-npm" type="number" name="npm" required />
+      <input id="form-login-email" type="email" name="login-email" required />
       <br />
-      <label for="form-pass">Password: </label>
+      <label for="form-login-pass">Password: </label>
       <br />
-      <input id="form-pass" type="password" name="pass" required />
+      <input id="form-login-pass" type="password" name="login-pass" required />
       <br />
       <div class="btn-inline">
         <input class="reset" type="reset" name="reset" />
@@ -21,3 +21,20 @@
     <a href="?register" class="float-right">Anda belum punya akun?</a>
   </div>
 </section>
+
+<?php
+  $email = $_POST['email'];
+  $pass = $_POST['pass'];
+
+  if($email == $_POST['login-email']) {
+    if($pass == $_POST['login-pass']) {
+
+    }
+    else {
+      echo "Password Salah";
+    }
+  }
+  else {
+    echo "Email Salah";
+  }
+?>
