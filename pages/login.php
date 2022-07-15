@@ -21,20 +21,3 @@
     <a href="?register" class="float-right">Anda belum punya akun?</a>
   </div>
 </section>
-
-<?php
-  $email = $_POST['email'];
-  $pass = $_POST['pass'];
-
-  if($email == $_POST['login-email']) {
-    if($pass == $_POST['login-pass']) {
-
-    }
-    else {
-      echo "Password Salah";
-    }
-  }
-  else {
-    echo "Email Salah";
-  }
-?>
